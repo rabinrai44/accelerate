@@ -17,9 +17,10 @@ get_header(); ?>
     	        $services = get_field("services");
     	        $client    = get_field("client");
     	        $site_link = get_field("site_link");
-    	        $image1 = get_field("image_1");
-    	        $image2 = get_field("image_2");
-    	        $image3 = get_field("image_3");
+    	        $image_1 = get_field("image_1");
+    	        $image_2 = get_field("image_2");
+    	        $image_3 = get_field("image_3");
+    	        $size = "full";
 	        
 	         ?>
 	        
@@ -35,10 +36,19 @@ get_header(); ?>
 	            </aside>
 	        </article>
 	        <div class="case-study-images">
+	        	<?php if ($image_1) { ?>
 	            
-	            <img src="<?php echo $image1; ?>" alt="" />
-	            <img src="<?php echo $image2; ?>" alt="" />
-	            <img src="<?php echo $image3; ?>" alt="" />
+	            <img src="<?php echo wp_get_attachment_image($image_1, $size); ?>">
+	            <?php } ?>
+	            	<?php if ($image_2) { ?>
+	            
+	            <img src="<?php echo wp_get_attachment_image($image_2, $size); ?>">
+	            <?php } ?>
+	            
+	            	<?php if ($image_3) { ?>
+	            
+	            <img src="<?php echo wp_get_attachment_image($image_3, $size); ?>">
+	            <?php } ?>
 	            
 	        </div>
 	        
