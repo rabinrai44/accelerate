@@ -34,7 +34,7 @@
 }
 
 .homepage-featured-work .single-featured-work {
-    display: block;
+    display: inline-block;
     margin: 2px;
     padding: 3px;
 }
