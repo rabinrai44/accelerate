@@ -29,14 +29,14 @@ get_header(); ?>
         
         <?php query_posts( 'posts_per_page=3&post_type=case_studies' ); ?>
         
-            <?php while ( have_posts() ) : the_posts(); 
+            <?php while ( have_posts() ) : the_post(); 
                 
                 $image_1 = get_field("image_1");
-                $size = "medium";
+                //$size = "medium";
                 ?>
                     
                     <figure>
-                        <?php echo wp_get_attachment_image($image_1, $size); ?>
+                        <?php echo wp_get_attachment_image( $image_1, 'medium' ); ?>
                     </figure>
                     
                 <h3>
