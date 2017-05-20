@@ -68,6 +68,17 @@ get_header(); ?>
        <?php endwhile; ?>
        <?php wp_reset_query(); ?>
     </div>
+    <div class="recent-post">
+        <h4>Recent Post</h4>
+         <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
+       <!--loop content here -->
+       <h2><?php the_title(); ?></h2>
+       <?php the_excerpt(); ?>
+       <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
+       
+       <?php endwhile; ?>
+       <?php wp_reset_query(); ?>
+    </div>
   </div>
 </section>
 

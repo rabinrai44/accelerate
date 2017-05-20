@@ -29,7 +29,7 @@
 /* Homepage Featured Work*/
 .homepage-featured-work {
     margin: 0;
-    padding: 0;
+    padding-bottom: 60px;
     list-style: none;
 }
 
@@ -44,7 +44,18 @@
     font-size: 19px;
 }
 
+.blog-post,
+.recent-post {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
 .blog-post {
+    width: 50%;
+}
+
+.recent-post {
     width: 50%;
 }
 
