@@ -13,6 +13,7 @@
 @import url("../accelerate-theme/style.css");
 
 
+/* HomePage */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
@@ -23,7 +24,20 @@
 
 .button {
     background: none repeat scroll 0 0 #45ac9d;
-}g
+}
+
+/* Homepage Featured Work*/
+.homepage-featured-work {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.homepage-featured-work .single-featured-work {
+    display: block;
+    margin: 2px;
+    padding: 3px;
+}
 
 .blog-post {
     width: 50%;
