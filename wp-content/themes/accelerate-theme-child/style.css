@@ -38,6 +38,11 @@
     margin: 2px;
     padding: 3px;
 }
+.homepage-featured-work h3 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 19px;
+}
 
 .blog-post {
     width: 50%;
