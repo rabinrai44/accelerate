@@ -31,6 +31,10 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+#primary {
+    margin-top: 60px;
+}
+
 /* Homepage Featured Work*/
 .homepage-featured-work {
     margin: 0;
@@ -86,16 +90,27 @@
 }
 
 
+
 /* Case-Study Styles */
+
+.case-study {
+    float: left;
+    padding: 15px 0 15px 0;
+    
+}
 
  aside.case-study-sidebar {
     float: left;
-    width: 300px;
+    width: 40%;
+}
+
+aside.case-study-sidebar p {
+    padding: 0 60px 0 15px;
 }
 
 div.case-study-images {
     float: left;
-    width: 606px;
+    width: 60%;
 }
 
 div.case-study-images img {
