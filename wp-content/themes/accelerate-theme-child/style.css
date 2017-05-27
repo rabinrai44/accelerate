@@ -22,6 +22,11 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+#menu-top-nav li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
