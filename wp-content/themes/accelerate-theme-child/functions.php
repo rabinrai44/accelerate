@@ -43,9 +43,27 @@
          'rewrite'      => array( 'slug' => 'case-studies' ),
             )
         );
+        
+         register_post_type( 'services', 
+     array(
+         
+         'labels'   => array(
+         
+                 'name'             => __( 'Our Services'),
+                 'singular_name'    => __( 'Our Services')
+         
+         ),
+         
+         'public'       => true,
+         'has_archive'  => true,
+         'rewrite'      => array( 'slug' => 'our_services' ),
+            )
+        );
+        
  }
  
  add_action( 'init', 'create_custom_post_types');
+ 
  
  //Reverse Case Studies Archive Order 
  function reverse_archive_order( $query ) {

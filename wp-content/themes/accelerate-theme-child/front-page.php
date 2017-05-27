@@ -28,6 +28,8 @@ get_header(); ?>
 <section class="featured-work">
     <div class="site-content">
         
+        <h2>Featured Work</h2>
+        
         <ul class="homepage-featured-work">
         
         <?php query_posts( 'posts_per_page=3&post_type=case_studies&order=ASC' ); ?>
@@ -55,6 +57,26 @@ get_header(); ?>
     </div><!-- .site-content -->
 </section><!-- .featured-work -->
 
+<section class="our-services">
+    <div class="site-content">
+        <h4>Our Services</h4>
+        <?php query_posts( 'posts_per_page=4&post_type=our&order=ASC' ); ?>
+        <?php while ( have_posts() ) : the_post();  
+            
+             $service_icon = get_field("service_icon");
+        
+        ?>
+        <div class="service-item">
+            <p><i class="<?php echo $service_icon; ?> icon"></i></p>
+            <h2><?php the_title(); ?></h2>
+        </div>
+        
+        <?php endwhile; ?>
+        <?php wp_reset_query(); ?>
+        
+    </div>
+</section><!-- .our-services -->
+
 <section class="recent-posts">
   <div class="site-content">
     <div class="blog-post">
@@ -80,6 +102,8 @@ get_header(); ?>
        <?php wp_reset_query(); ?>
     </div>
   </div>
-</section>
+</section><!-- .recent-posts -->
+
+
 
 <?php get_footer(); ?>
