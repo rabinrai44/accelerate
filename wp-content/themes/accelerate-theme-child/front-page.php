@@ -30,7 +30,7 @@ get_header(); ?>
         
         <ul class="homepage-featured-work">
         
-        <?php query_posts( 'posts_per_page=3&post_type=case_studies' ); ?>
+        <?php query_posts( 'posts_per_page=3&post_type=case_studies&order=ASC' ); ?>
         
             <?php while ( have_posts() ) : the_post(); 
                 
