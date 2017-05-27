@@ -34,23 +34,25 @@ get_header(); ?>
 	                
 	                <h6><a href="<?php echo $site_link; ?>">Site Link</a></h6>
 	            </aside>
-	        </article>
-	        <div class="case-study-images">
-	        	<?php if ($image_1) { ?>
-	            
-	            <?php echo wp_get_attachment_image($image_1, $size); ?>
-	            <?php } ?>
-	            	<?php if ($image_2) { ?>
-	            
-	            <?php echo wp_get_attachment_image($image_2, $size); ?>
-	            <?php } ?>
-	            
-	            	<?php if ($image_3) { ?>
-	            
-	            <?php echo wp_get_attachment_image($image_3, $size); ?>
-	            <?php } ?>
-	            
-	        </div>
+	        
+		        <div class="case-study-images">
+		        	<?php if ($image_1) { ?>
+		            
+		            <?php echo wp_get_attachment_image($image_1, $size); ?>
+		            <?php } ?>
+		            	<?php if ($image_2) { ?>
+		            
+		            <?php echo wp_get_attachment_image($image_2, $size); ?>
+		            <?php } ?>
+		            
+		            	<?php if ($image_3) { ?>
+		            
+		            <?php echo wp_get_attachment_image($image_3, $size); ?>
+		            <?php } ?>
+		            
+		        </div>
+	        
+	        </article><!-- .case-study -->
 	        
 	        <?php endwhile; // end of the loop ?>
 	    </div><!-- #content -->
