@@ -22,6 +22,7 @@ get_header(); ?>
 				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
 			</div>
 		<?php endwhile; // end of the loop. ?>
+		
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
@@ -59,8 +60,8 @@ get_header(); ?>
 
 <section class="our-services">
     <div class="site-content">
-        <h4>Our Services</h4>
-        <?php query_posts( 'posts_per_page=4&post_type=our&order=ASC' ); ?>
+        <h2>Our Services</h2>
+        <?php query_posts( 'posts_per_page=4&post_type=our_services' ); ?>
         <?php while ( have_posts() ) : the_post();  
             
              $service_icon = get_field("service_icon");
@@ -68,7 +69,7 @@ get_header(); ?>
         ?>
         <div class="service-item">
             <p><i class="<?php echo $service_icon; ?> icon"></i></p>
-            <h2><?php the_title(); ?></h2>
+            <h5><?php the_title(); ?></h5>
         </div>
         
         <?php endwhile; ?>

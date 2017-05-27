@@ -13,6 +13,11 @@
 @import url("../accelerate-theme/style.css");
 
 
+.site-content h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
 /* HomePage */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);

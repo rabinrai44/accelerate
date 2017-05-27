@@ -44,19 +44,19 @@
             )
         );
         
-         register_post_type( 'services', 
+         register_post_type( 'our_services', 
      array(
          
          'labels'   => array(
          
                  'name'             => __( 'Our Services'),
-                 'singular_name'    => __( 'Our Services')
+                 'singular_name'    => __( 'Our Service')
          
          ),
          
          'public'       => true,
          'has_archive'  => true,
-         'rewrite'      => array( 'slug' => 'our_services' ),
+         'rewrite'      => array( 'slug' => 'our-services' ),
             )
         );
         
