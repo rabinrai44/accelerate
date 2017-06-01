@@ -33,18 +33,46 @@ get_header(); ?>
    
         
     </div><!-- .site-content -->
-</section><!-- .featured-work -->
+</section><!-- .about-page -->
 
 <section class="our-services">
     <div class="site-content">
         <h2>Our Services</h2>
         <p>We take pride in our clients and the content we create for theme. <br> Here's a  brief overview of our offered services. </p>
+        
         <div class="service">
         	<div class="service-icon">
-        		
+        		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/bullseye.png" alt="strategy">
         	</div><!-- .service-icon -->
         	<div class="service-content">
-        		
+        		<h3>Strategy</h3>
+        		<p>
+        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 
+        		</p>
+        	</div><!-- .service-content -->
+        </div><!-- .service -->
+        
+         <div class="service">
+        	<div class="service-content">
+        		<h3>Influencer Mapping</h3>
+        		<p>
+        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 
+        		</p>
+        	</div><!-- .service-content -->
+        	<div class="service-icon">
+        		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/atom.png" alt="strategy">
+        	</div><!-- .service-icon -->
+        </div><!-- .service -->
+        
+         <div class="service">
+        	<div class="service-icon">
+        		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/design.png" alt="strategy">
+        	</div><!-- .service-icon -->
+        	<div class="service-content">
+        		<h3>Design &amp; Development</h3>
+        		<p>
+        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 
+        		</p>
         	</div><!-- .service-content -->
         </div><!-- .service -->
         
