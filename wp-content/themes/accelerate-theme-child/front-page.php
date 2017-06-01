@@ -61,7 +61,7 @@ get_header(); ?>
 <section class="our-services">
     <div class="site-content">
         <h2>Our Services</h2>
-        <?php query_posts( 'posts_per_page=4&post_type=our_services' ); ?>
+        <?php query_posts( 'posts_per_page=4&post_type=our_services&order=ASC' ); ?>
         <?php while ( have_posts() ) : the_post();  
             
              $service_icon = get_field("service_icon");
