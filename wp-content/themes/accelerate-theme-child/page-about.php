@@ -37,8 +37,7 @@ get_header(); ?>
 
 <section class="our-services">
     <div class="site-content">
-        <h2>Our Services</h2>
-        <p>We take pride in our clients and the content we create for theme. <br> Here's a  brief overview of our offered services. </p>
+        <p style="text-align: center; margin-bottom: 40px;">We take pride in our clients and the content we create for theme. <br> Here's a  brief overview of our offered services. </p>
         
         <div class="service">
         	<div class="service-icon">
@@ -53,10 +52,10 @@ get_header(); ?>
         </div><!-- .service -->
         
          <div class="service">
-         	<div class="service-icon">
+         	<div class="service-icon-right">
         		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/atom.png" alt="strategy">
         	</div><!-- .service-icon -->
-        	<div class="service-content">
+        	<div class="service-content-left">
         		<h3 class="sub-title">Influencer Mapping</h3>
         		<p>
         			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 

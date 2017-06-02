@@ -131,7 +131,7 @@ div.case-study-images img {
 /* PAGE: About */
 
 .service {
-    margin: 0;
+    margin: 0 0 40px 0;
     padding: 0;
     float: left;
     width: 100%;
@@ -154,27 +154,53 @@ div.case-study-images img {
     
 }
 
-.service:nth(2) .service-icon {
-    float: right;
-}
-.service:nth(2) .service-content {
-    float: left;
+
+
+/*************************
+ ===== Media Queries ===== 
+**************************/
+
+@media screen and (min-width: 480px) {
+    
+    
+    
 }
 
-/* Media Queries */
+
+
 @media screen and (min-width: 660px) {
     .site-content {
         width: 960px;
     }
-    
-    .service-icon {
-        float: left;
-        width: 20%;
+    .service p,
+    .service .sub-title {
+        text-align: left;
     }
     
-    .service-content {
+    .service-icon,
+    .service-content-left {
+        float: left;
+    }
+    
+    .service-icon,
+    .service-icon-right {
+        width: 25%;
+    } 
+    
+    .service-content,
+    .service-icon-right {
         float: right;
-        width: 77.5%;
+    }
+    
+    .service-content{
+        width: 72.5%;
         margin-left: 2.5%;
     }
+    
+    .service-content-left {
+        width: 72.5%;
+        margin-right: 2.5%;
+    }
+    
+   
 }
