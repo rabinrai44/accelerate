@@ -13,6 +13,9 @@
 @import url("../accelerate-theme/style.css");
 
 
+.site-content {
+    max-width: 100%;
+}
 .site-content h2 {
     text-align: center;
     padding: 20px 0;
@@ -122,4 +125,56 @@ div.case-study-images img {
     display: block;
     margin-top: 40px;
     border: 1px solid #dddddd;
+}
+
+
+/* PAGE: About */
+
+.service {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+.service-icon,
+.service-content {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.service p,
+.service .sub-title {
+
+    text-align: center;
+    padding: 0 2% 0 2%;
+    
+}
+
+.service:nth(2) .service-icon {
+    float: right;
+}
+.service:nth(2) .service-content {
+    float: left;
+}
+
+/* Media Queries */
+@media screen and (min-width: 660px) {
+    .site-content {
+        width: 960px;
+    }
+    
+    .service-icon {
+        float: left;
+        width: 20%;
+    }
+    
+    .service-content {
+        float: right;
+        width: 77.5%;
+        margin-left: 2.5%;
+    }
 }

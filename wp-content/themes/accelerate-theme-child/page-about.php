@@ -45,7 +45,7 @@ get_header(); ?>
         		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/bullseye.png" alt="strategy">
         	</div><!-- .service-icon -->
         	<div class="service-content">
-        		<h3>Strategy</h3>
+        		<h3 class="sub-title">Strategy</h3>
         		<p>
         			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 
         		</p>
@@ -53,15 +53,15 @@ get_header(); ?>
         </div><!-- .service -->
         
          <div class="service">
+         	<div class="service-icon">
+        		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/atom.png" alt="strategy">
+        	</div><!-- .service-icon -->
         	<div class="service-content">
-        		<h3>Influencer Mapping</h3>
+        		<h3 class="sub-title">Influencer Mapping</h3>
         		<p>
         			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 
         		</p>
         	</div><!-- .service-content -->
-        	<div class="service-icon">
-        		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/atom.png" alt="strategy">
-        	</div><!-- .service-icon -->
         </div><!-- .service -->
         
          <div class="service">
@@ -69,7 +69,7 @@ get_header(); ?>
         		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/design.png" alt="strategy">
         	</div><!-- .service-icon -->
         	<div class="service-content">
-        		<h3>Design &amp; Development</h3>
+        		<h3 class="sub-title">Design &amp; Development</h3>
         		<p>
         			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 
         		</p>
