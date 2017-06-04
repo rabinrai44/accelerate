@@ -15,6 +15,7 @@
 
 .site-content {
     max-width: 100%;
+    overflow: hidden;
 }
 .site-content h2 {
     text-align: center;
@@ -41,6 +42,12 @@
 
 #primary {
     margin-top: 60px;
+}
+
+.homepage-hero {
+    margin: 20vh 0px 0px;
+    color: #fff;
+    font-size: 22px;
 }
 
 /* Homepage Featured Work*/
@@ -129,6 +136,18 @@ div.case-study-images img {
 
 
 /* PAGE: About */
+
+.about-hero {
+    background: url("img/taxi-photo.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 360px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
 
 .service {
     margin: 0 0 40px 0;
