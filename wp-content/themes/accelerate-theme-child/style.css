@@ -162,6 +162,17 @@ div.case-study-images img {
     clear: both;
 }
 
+.hero-text {
+    width: 62%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.hero-text p {
+    font-size: 25px;
+    color: white;
+}
+
 .service {
     margin: 0 0 40px 0;
     padding: 0;

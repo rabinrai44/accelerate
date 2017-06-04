@@ -18,10 +18,11 @@ get_header(); ?>
 	<div class="container-grid">
 		<div class="row">
 			<div class="col-6 site-content">
+				<div class="hero-text">
 				<?php while ( have_posts() ) : the_post(); ?>
 						<?php the_content(); ?>
 				<?php endwhile; // end of the loop. ?>
-					
+				</div>
 			</div><!-- .col -->
 		</div><!-- .row -->
 	</div><!-- .container-grid -->
