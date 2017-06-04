@@ -25,6 +25,15 @@
  * @since Accelerate Marketing 1.0
  */
  
+ 
+ function theme_styles() {
+
+	wp_enqueue_style( 'custom-grid_styles', get_stylesheet_directory_uri() . '/assets/css/grid.css', array(), '1.0');
+
+}
+add_action( 'wp_enqueue_scripts', 'theme_styles');
+ 
+ 
  // Custom Post Type
  
  function create_custom_post_types() {
