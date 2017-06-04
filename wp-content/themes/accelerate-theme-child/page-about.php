@@ -59,10 +59,10 @@ get_header(); ?>
 		        </div><!-- .service -->
 		        
 		         <div class="service">
-		         	<div class="col-4 service-icon-right">
+		         	<div class="service-icon-right">
 		        		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/atom.png" alt="strategy">
 		        	</div><!-- .service-icon -->
-		        	<div class="col-2 service-content-left">
+		        	<div class="service-content-left">
 		        		<h3 class="sub-title">Influencer Mapping</h3>
 		        		<p>
 		        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 
@@ -87,7 +87,7 @@ get_header(); ?>
 		        		Interested in working with us? &nbsp;&nbsp;&nbsp; <a href="#"><button class="btn-main">Contact Us</button></a>
 		        	</h2>
 		        </div>
-		    </div><!-- .col, .site-content -->
+		    </div><!-- .site-content -->
 	    </div><!-- .row -->
     </div><!-- .container-grid -->
 </section><!-- .our-services -->
