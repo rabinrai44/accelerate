@@ -147,18 +147,25 @@ div.case-study-images img {
 
 .service-icon,
 .service-content {
-    float: left;
     margin: 0;
     padding: 0;
     width: 100%;
     overflow: hidden;
+    text-align: center;
 }
 
 .service p,
 .service .sub-title {
 
     text-align: center;
-    padding: 0 2% 0 2%;
+    padding: 0 5% 0 5%;
+    
+}
+
+.service-icon-right {
+    margin: 0;
+    padding: 0;
+    text-align: center;
     
 }
 
