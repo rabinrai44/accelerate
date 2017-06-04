@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<section class="home-page">
+<section class="about-hero">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class='homepage-hero'>
@@ -76,7 +76,9 @@ get_header(); ?>
         </div><!-- .service -->
         
         <div class="accelerate-optin">
-        	<h2>Interested in working with us?</h2> <a href="#"><button class="btn-main">Contact Us</button></a>
+        	<h2>
+        		Interested in working with us? &nbsp;&nbsp;&nbsp; <a href="#"><button class="btn-main">Contact Us</button></a>
+        	</h2>
         </div>
     </div><!-- .site-content -->
 </section><!-- .our-services -->
