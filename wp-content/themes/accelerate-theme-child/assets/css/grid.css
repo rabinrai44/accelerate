@@ -44,30 +44,27 @@ html {
     padding: 12px;
 }
 
-.col-1 { width: 16.66%;}
-
-.col-2 { width: 33.33%;}
-
-.col-3 { width: 50%;}
-
-.col-4 { width: 66.664%;}
-
-.col-5 { width: 83.33%;}
-
-.col-6 { width: 100%;}
-
-.outline, .outline * {
-    outline: 1px solid #f6a1a1;
-}
+.col-1 {width: 8.33333333%;}
+.col-2 {width: 16.66666667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33333333%;}
+.col-5 {width: 41.66666667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33333333%;}
+.col-8 {width: 66.66666667%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33333333%;}
+.col-11 {width: 91.66666667%;}
+.col-12 {width: 100%;}
 
 
 /*============ Responsive Grid ===========*/
 
 @media all and (max-width: 800px) {
-    .col-1 { width: 33.33%;}
-    .col-2 { width: 50%;}
-    .col-3 { width: 83.33%;}
-    .col-4 { width: 100%;}
+    .col-1 { width: 16.66%;}
+    .col-2 { width: 33.33%;}
+    .col-3 { width: 50%;}
+    .col-4 { width: 50%;}
     .col-5 { width: 100%;}
     .col-6 { width: 100%;}
     
@@ -86,6 +83,6 @@ html {
         .col-3{ width: 100%;    }
         .col-4{ width: 100%;    }
         .col-5{ width: 100%;    }
-        .col-6{ width: 100%;      }
+        .col-6{ width: 100%;    }
     }
 
