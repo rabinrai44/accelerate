@@ -15,94 +15,110 @@
 get_header(); ?>
 
 <section class="home-page">
-	<div class="site-content">
-		<?php while ( have_posts() ) : the_post(); ?>
-			<div class='homepage-hero'>
-			    <?php the_content(); ?>
-				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
-			</div>
-		<?php endwhile; // end of the loop. ?>
-		
-	</div><!-- .container -->
+    <div class="container-grid">
+        <div class="row">
+        	<div class="col-6 site-content">
+        		<?php while ( have_posts() ) : the_post(); ?>
+        			<div class='homepage-hero'>
+        			    <?php the_content(); ?>
+        				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
+        			</div>
+        		<?php endwhile; // end of the loop. ?>
+        		
+        	</div><!-- .col, .site-content -->
+	    </div><!-- .row -->
+	</div><!-- .container-grid -->
 </section><!-- .home-page -->
 
 <section class="featured-work">
-    <div class="site-content">
-        
-        <h2>Featured Work</h2>
-        
-        <ul class="homepage-featured-work">
-        
-        <?php query_posts( 'posts_per_page=3&post_type=case_studies&order=ASC' ); ?>
-        
-            <?php while ( have_posts() ) : the_post(); 
+    <div class="container-grid">
+        <div class="row">
+            <div class="site-content">
                 
-                $image_1 = get_field("image_1");
-                $size = "medium";
-                ?>
-                <li class="single-featured-work">
-                    <figure>
-                        <?php echo wp_get_attachment_image( $image_1, $size ); ?>
-                    </figure>
+                <h2>Featured Work</h2>
+                
+                <ul class="homepage-featured-work">
+                
+                <?php query_posts( 'posts_per_page=3&post_type=case_studies&order=ASC' ); ?>
+                
+                    <?php while ( have_posts() ) : the_post(); 
+                        
+                        $image_1 = get_field("image_1");
+                        $size = "medium";
+                        ?>
+                        <li class="col-2 single-featured-item">
+                            <figure>
+                                <?php echo wp_get_attachment_image( $image_1, $size ); ?>
+                            </figure>
+                            
+                        <h3>
+                            <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
+                        </h3>
+                        </li><!-- .single-featured-work -->
                     
-                <h3>
-                    <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
-                </h3>
-                </li><!-- .single-featured-work -->
-            
-            <?php endwhile; //end of the loop. ?>
-            <?php wp_reset_query(); // resets the altered query back to the origignal ?>
-            
-            </ul><!--- .homepage-featured-work -->
-        
-    </div><!-- .site-content -->
+                    <?php endwhile; //end of the loop. ?>
+                    <?php wp_reset_query(); // resets the altered query back to the origignal ?>
+                    
+                    </ul><!--- .homepage-featured-work -->
+                
+            </div><!-- .site-content -->
+        </div><!-- .row -->
+	</div><!-- .container-grid -->
 </section><!-- .featured-work -->
 
 <section class="our-services">
-    <div class="site-content">
-        <h2>Our Services</h2>
-        <?php query_posts( 'posts_per_page=4&post_type=our_services&order=ASC' ); ?>
-        <?php while ( have_posts() ) : the_post();  
-            
-             $service_icon = get_field("service_icon");
-        
-        ?>
-        <div class="service-item">
-            <p><i class="<?php echo $service_icon; ?> icon"></i></p>
-            <h5><?php the_title(); ?></h5>
-        </div>
-        
-        <?php endwhile; ?>
-        <?php wp_reset_query(); ?>
-        
-    </div>
+     <div class="container-grid">
+        <div class="row">
+            <div class="site-content">
+                <h2>Our Services</h2>
+                <?php query_posts( 'posts_per_page=4&post_type=our_services&order=ASC' ); ?>
+                <?php while ( have_posts() ) : the_post();  
+                    
+                     $service_icon = get_field("service_icon");
+                
+                ?>
+                <div class="service-item">
+                    <p><i class="<?php echo $service_icon; ?> icon"></i></p>
+                    <h5><?php the_title(); ?></h5>
+                </div>
+                
+                <?php endwhile; ?>
+                <?php wp_reset_query(); ?>
+                
+            </div>
+        </div><!-- .row -->
+	</div><!-- .container-grid -->
 </section><!-- .our-services -->
 
 <section class="recent-posts">
-  <div class="site-content">
-    <div class="blog-post">
-      <h4>From the Blog</h4>
-      <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
-       <!--loop content here -->
-       <h2><?php the_title(); ?></h2>
-       <?php the_excerpt(); ?>
-       <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
-       
-       <?php endwhile; ?>
-       <?php wp_reset_query(); ?>
-    </div>
-    <div class="recent-post">
-        <h4>Recent Post</h4>
-         <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
-       <!--loop content here -->
-       <h2><?php the_title(); ?></h2>
-       <?php the_excerpt(); ?>
-       <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
-       
-       <?php endwhile; ?>
-       <?php wp_reset_query(); ?>
-    </div>
-  </div>
+    <div class="container-grid">
+        <div class="row">
+            <div class="site-content">
+                <div class="col-3 blog-post">
+                  <h4>From the Blog</h4>
+                  <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
+                   <!--loop content here -->
+                   <h2><?php the_title(); ?></h2>
+                   <?php the_excerpt(); ?>
+                   <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
+                   
+                   <?php endwhile; ?>
+                   <?php wp_reset_query(); ?>
+                </div>
+                <div class="col-3 recent-post">
+                    <h4>Recent Post</h4>
+                     <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
+                   <!--loop content here -->
+                   <h2><?php the_title(); ?></h2>
+                   <?php the_excerpt(); ?>
+                   <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
+                   
+                   <?php endwhile; ?>
+                   <?php wp_reset_query(); ?>
+                </div>
+            </div><!-- .site-content -->
+        </div><!-- .row -->
+	</div><!-- .container-grid -->
 </section><!-- .recent-posts -->
 
 
