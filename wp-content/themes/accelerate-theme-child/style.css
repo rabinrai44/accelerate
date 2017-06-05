@@ -214,6 +214,9 @@ div.case-study-images img {
 
 /* FOOTER */
 
+.footer-content {
+    border-top: 1px dotted #e3e1e1;
+}
 .social-media-menu {
     list-style: none;
     float: right;
