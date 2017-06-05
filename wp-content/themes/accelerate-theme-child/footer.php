@@ -24,7 +24,7 @@
 						</div>
 					</div><!-- .col, .site-info -->
 					<div class="col-3 social-media">
-						<nav class="social-media-navigation" role="navigation">
+						<nav class="social-media-navbar" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
 						</nav>
 					</div><!-- .col, .social-media -->

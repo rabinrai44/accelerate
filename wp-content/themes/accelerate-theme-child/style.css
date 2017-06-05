@@ -212,6 +212,35 @@ div.case-study-images img {
 }
 
 
+/* FOOTER */
+
+.social-media-menu {
+    list-style: none;
+    float: right;
+}
+
+.social-media-menu li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.social-media-menu li:last-child {
+    padding-right: 0;
+}
+
+.social-media-menu li .fa {
+    height: 32px;
+    width: 32px;
+    background: #3b3b3b;
+    color: white;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 15%;
+}
+
+
 
 /*************************
  ===== Media Queries ===== 
