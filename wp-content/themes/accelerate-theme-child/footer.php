@@ -14,18 +14,22 @@
 
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="site-info">
-				<div class="site-description">
-				<p><?php bloginfo('description'); ?></p>
-				<p>&copy; <?php bloginfo('title'); ?>, LLC
-				</div>
-				
-			<nav class="social-media-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
-			</nav>
-
-				
-			</div><!-- .site-info -->
+			<div class="container-grid">
+				<div class="row">
+					
+					<div class="col-3 site-info">
+						<div class="site-description">
+						<p><?php bloginfo('description'); ?></p>
+						<p>&copy; <?php bloginfo('title'); ?>, LLC
+						</div>
+					</div><!-- .col, .site-info -->
+					<div class="col-3 social-media">
+						<nav class="social-media-navigation" role="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
+						</nav>
+					</div><!-- .col, .social-media -->
+				</div><!-- .row -->
+			</div><!-- .container-grid -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
