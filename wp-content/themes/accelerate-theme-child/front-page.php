@@ -17,7 +17,7 @@ get_header(); ?>
 <section class="home-page">
     <div class="container-grid">
         <div class="row">
-        	<div class="col-6 site-content">
+        	<div class="col-12 site-content">
         		<?php while ( have_posts() ) : the_post(); ?>
         			<div class='homepage-hero'>
         			    <?php the_content(); ?>
@@ -46,7 +46,7 @@ get_header(); ?>
                         $image_1 = get_field("image_1");
                         $size = "medium";
                         ?>
-                        <li class="col-2 single-featured-item">
+                        <li class="col-4 single-featured-item">
                             <figure>
                                 <?php echo wp_get_attachment_image( $image_1, $size ); ?>
                             </figure>
@@ -94,7 +94,7 @@ get_header(); ?>
     <div class="container-grid">
         <div class="row">
             <div class="site-content">
-                <div class="col-3 blog-post">
+                <div class="col-6 blog-post">
                   <h4>From the Blog</h4>
                   <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
                    <!--loop content here -->
@@ -105,7 +105,7 @@ get_header(); ?>
                    <?php endwhile; ?>
                    <?php wp_reset_query(); ?>
                 </div>
-                <div class="col-3 recent-post">
+                <div class="col-6 recent-post">
                     <h4>Recent Post</h4>
                      <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
                    <!--loop content here -->

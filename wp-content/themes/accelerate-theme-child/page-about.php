@@ -17,7 +17,7 @@ get_header(); ?>
 <section class="about-hero">
 	<div class="container-grid">
 		<div class="row">
-			<div class="col-6 site-content">
+			<div class="col-12 site-content">
 				<div class="hero-text">
 				<?php while ( have_posts() ) : the_post(); ?>
 						<?php the_content(); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 <section class="about-page">
 	<div class="container-grid">
 		<div class="row">
-		    <div class="col-6 site-content">
+		    <div class="col-12 site-content">
 		        
 		        <h2>Our Services</h2>
 		        <p><?php the_content; ?></p>
@@ -48,10 +48,10 @@ get_header(); ?>
 		        <p style="text-align: center; margin-bottom: 40px;">We take pride in our clients and the content we create for theme. <br> Here's a  brief overview of our offered services. </p>
 		        
 		        <div class="service">
-		        	<div class="col-2 service-icon">
+		        	<div class="col-3 service-icon">
 		        		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/bullseye.png" alt="strategy">
 		        	</div><!-- .service-icon -->
-		        	<div class="col-4 service-content">
+		        	<div class="col-9 service-content">
 		        		<h3 class="sub-title">Strategy</h3>
 		        		<p>
 		        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 
@@ -72,10 +72,10 @@ get_header(); ?>
 		        </div><!-- .service -->
 		        
 		         <div class="service">
-		        	<div class="col-2 service-icon">
+		        	<div class="col-3 service-icon">
 		        		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/design.png" alt="strategy">
 		        	</div><!-- .service-icon -->
-		        	<div class="col-4 service-content">
+		        	<div class="col-9 service-content">
 		        		<h3 class="sub-title">Design &amp; Development</h3>
 		        		<p>
 		        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum tortor sed quam vestibulum fermentum. Suspendisse finibus vulputate libero eget commodo. Cras vitae augue nec lacus mollis tincidunt. Nunc laoreet, libero eu tristique suscipit, lectus orci tempor 
@@ -83,7 +83,7 @@ get_header(); ?>
 		        	</div><!-- .service-content -->
 		        </div><!-- .service -->
 		        
-		        <div class="col-6 accelerate-optin">
+		        <div class="col-12 accelerate-optin">
 		        	<h2>
 		        		Interested in working with us? &nbsp;&nbsp;&nbsp; <a href="#"><button class="btn-main">Contact Us</button></a>
 		        	</h2>

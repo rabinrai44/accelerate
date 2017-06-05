@@ -17,13 +17,13 @@
 			<div class="container-grid">
 				<div class="row">
 					<div class="footer-content">
-						<div class="col-3 site-info">
+						<div class="col-6 site-info">
 							<div class="site-description">
 							<p><?php bloginfo('description'); ?></p>
 							<p>&copy; <?php bloginfo('title'); ?>, LLC
 							</div>
 						</div><!-- .col, .site-info -->
-						<div class="col-3 social-media">
+						<div class="col-6 social-media">
 							<nav class="social-media-navbar" role="navigation">
 							<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
 							</nav>
