@@ -32,6 +32,11 @@
     color: #45ac9d;
     font-weight: bold;
 }
+
+.secondary-text {
+    color: #a6a6a6;
+    font-size: 17px;
+}
 img {
     max-width: 100%;
     height: auto;

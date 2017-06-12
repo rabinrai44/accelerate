@@ -105,7 +105,7 @@ get_header(); ?>
         <div class="row">
             <div class="site-content">
                 <div class="col-6 blog-post">
-                  <h4>From the Blog</h4>
+                  <h4 class="secondary-text">From the Blog</h4>
                   <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
                    <!--loop content here -->
                    <h2><?php the_title(); ?></h2>
@@ -116,15 +116,12 @@ get_header(); ?>
                    <?php wp_reset_query(); ?>
                 </div>
                 <div class="col-6 recent-post">
-                    <h4>Recent Post</h4>
-                     <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
-                   <!--loop content here -->
-                   <h2><?php the_title(); ?></h2>
-                   <?php the_excerpt(); ?>
-                   <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
-                   
-                   <?php endwhile; ?>
-                   <?php wp_reset_query(); ?>
+                    <h4 class="secondary-text">Recent Tweet</h4>
+                     <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+                    <div id="secondary" class="widget-area" role="complementary">
+                    	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+                    </div>
+                    <?php endif; ?>
                 </div>
             </div><!-- .site-content -->
         </div><!-- .row -->
