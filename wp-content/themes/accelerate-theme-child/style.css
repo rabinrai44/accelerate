@@ -33,6 +33,7 @@ img {
     height: auto;
 }
 
+
 .site-content {
     max-width: 100%;
     overflow: hidden;
@@ -40,6 +41,7 @@ img {
 .site-content h2 {
     text-align: center;
     padding: 20px 0;
+    text-transform: uppercase;
 }
 
 /* HomePage */
@@ -263,6 +265,17 @@ div.case-study-images img {
     padding-top: 15%;
 }
 
+
+/* 404 page */
+
+ .page-content-404 a>span,
+ .page-content-404 h3 {
+    font-weight: bold;
+    color: #45ac9d;
+}
+.page-content-404 h3 {
+    font-size: 28px;
+}
 
 
 /*************************
