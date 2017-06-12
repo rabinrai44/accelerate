@@ -18,7 +18,7 @@ get_header(); ?>
     					<h3><?php _e( 'Whoops, Took a Wrong Turn…', 'accelerate-theme-child' ); ?></h3>
     					<p>Sorry, this page no longer exists, never existed or has been moved. We feel like complete jerks for totally misleading you.<br>
 
-Feel free to take a look around our <a href="<?php bloginfo('url'); ?>"><span>blog</span></a> or some of our featured <a href="<?php bloginfo('home-url'); ?>"> <span>work</span></a>. </p>
+Feel free to take a look around our <a href="<?php bloginfo('url'); ?>"><span class="primary-text">blog</span></a> or some of our featured <a href="<?php bloginfo('home-url'); ?>"> <span class="primary-text">work</span></a>. </p>
     				</div><!-- .page-content -->
     				<div class="col-3"></div>
     			</div><!-- .page-wrapper -->

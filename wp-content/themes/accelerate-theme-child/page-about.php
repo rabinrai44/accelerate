@@ -33,7 +33,7 @@ get_header(); ?>
 		<div class="row">
 		    <div class="col-12 site-content">
 		        
-		        <h2>Our Services</h2>
+		        <h2 class="main-title">Our Services</h2>
 		        <p><?php the_content; ?></p>
 		        
 		    </div><!-- .col, .site-content -->

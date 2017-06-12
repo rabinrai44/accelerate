@@ -35,7 +35,7 @@ get_header(); ?>
         <div class="row">
             <div class="site-content">
                 
-                <h2>Featured Work</h2>
+                <h2 class="main-title">Featured Work</h2>
                 
                 <ul class="homepage-featured-work">
                 
@@ -71,7 +71,7 @@ get_header(); ?>
         <div class="row">
             <div class="site-content">
                 <div class="col-12">
-                    <h2>Our Services</h2>
+                    <h2 class="main-title">Our Services</h2>
                 </div>
                 
                 <?php query_posts( 'posts_per_page=4&post_type=our_services&order=ASC' ); ?>

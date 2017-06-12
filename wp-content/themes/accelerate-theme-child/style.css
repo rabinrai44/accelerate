@@ -28,20 +28,25 @@
     border: 1px solid transparent;
 }
 
+.primary-text {
+    color: #45ac9d;
+    font-weight: bold;
+}
 img {
     max-width: 100%;
     height: auto;
+}
+
+.main-title {
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
 }
 
 
 .site-content {
     max-width: 100%;
     overflow: hidden;
-}
-.site-content h2 {
-    text-align: center;
-    padding: 20px 0;
-    text-transform: uppercase;
 }
 
 /* HomePage */
@@ -193,6 +198,7 @@ div.case-study-images img {
 .hero-text p {
     font-size: 25px;
     color: white;
+    text-align: center;
 }
 
 .service {
@@ -268,11 +274,7 @@ div.case-study-images img {
 
 /* 404 page */
 
- .page-content-404 a>span,
- .page-content-404 h3 {
-    font-weight: bold;
-    color: #45ac9d;
-}
+
 .page-content-404 h3 {
     font-size: 28px;
 }
