@@ -70,16 +70,26 @@ get_header(); ?>
      <div class="container-grid">
         <div class="row">
             <div class="site-content">
-                <h2>Our Services</h2>
+                <div class="col-12">
+                    <h2>Our Services</h2>
+                </div>
+                
                 <?php query_posts( 'posts_per_page=4&post_type=our_services&order=ASC' ); ?>
                 <?php while ( have_posts() ) : the_post();  
                     
                      $service_icon = get_field("service_icon");
+                     $size = "full";
                 
                 ?>
-                <div class="service-item">
-                    <p><i class="<?php echo $service_icon; ?> icon"></i></p>
-                    <h5><?php the_title(); ?></h5>
+                <div class="col-3">
+                     <div class="service-item">
+                    <p>
+			        	<?php if ($service_icon) { ?>
+			            <?php echo wp_get_attachment_image($service_icon, $size);
+			                } ?>
+                    </p>
+                    <h6><?php the_title(); ?></h6>
+                </div>
                 </div>
                 
                 <?php endwhile; ?>

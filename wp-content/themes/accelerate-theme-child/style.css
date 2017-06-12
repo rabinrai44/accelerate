@@ -28,6 +28,10 @@
     border: 1px solid transparent;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .site-content {
     max-width: 100%;
@@ -152,6 +156,22 @@ div.case-study-images img {
     margin-top: 40px;
     border: 1px solid #dddddd;
 }
+
+
+
+/* Services Styles */
+
+.service-item {
+    padding: 10px;
+    text-align: center;
+}
+
+.service-item p,
+.service-item h6 {
+    text-align: center;
+}
+
+
 
 
 /* PAGE: About */
