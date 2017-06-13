@@ -108,7 +108,6 @@ get_header(); ?>
                   <h4 class="secondary-text">From the Blog</h4>
                   <?php while ( have_posts('posts_per_page=1') ) : the_post(); ?>
                    <!--loop content here -->
-                   <h2><?php the_title(); ?></h2>
                    <?php the_excerpt(); ?>
                    <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
                    
